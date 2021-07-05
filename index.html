@@ -8,10 +8,10 @@
     <title>word-relay</title>
 </head>
 <body>
-    <div>player <span id='order'>1</span></div>
-    <div>given word: <span id="word"></span></div>
+    <div style="font-size: 20px;">player <span id='order'>1</span></div>
+    <div style="font-size: 20px;">given word: <span id="word"></span></div>
     <input type="text">
-    <button>input</button>
+    <button style="margin: 10px;">input</button>
     <button #refresh><a href=index.html>refresh</a></button>
 
     <script>
@@ -33,9 +33,10 @@
                 _input.focus();
                 num++;
                 _order.textContent = num;
+
             } else {
                 if (word[word.length - 1] === newWord[0]) {
-
+                    
                     if (num + 1 > numPlayer) {
                         num = 1;
                         _order.textContent = num;
@@ -61,13 +62,12 @@
         const onInput= function(event) {
             newWord = event.target.value;
         };
-
+        
 
         _button.addEventListener('click', onClickButton);
-        _input.addEventListener('input', onInput);
-
+        _input.addEventListener('input', onInput);       
     </script>
 
-
+    
 </body>
 </html>
