@@ -9,19 +9,22 @@
 </head>
 <body>
     <div>player <span id='order'>1</span></div>
-    <div>word: <span id="word"></span></div>
+    <div>given word: <span id="word"></span></div>
     <input type="text">
     <button>input</button>
     <script>
         const numPlayer = parseInt(prompt('How many players??'), 10); // prompt returns string
         const _button = document.querySelector('button');
         const _input = document.querySelector('input');
+        const _word = document.querySelector('#word');
         let word;
         let newWord;
 
         const onClickButton = function() {
             if (!word) { // empty?
                 word = newWord;
+                _word.textContent = word;
+                _input.value = '';
 
             } else {
 
