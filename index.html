@@ -8,14 +8,31 @@
     <title>word-relay</title>
 </head>
 <body>
-    <div>player 1</div>
+    <div>player <span id='order'>1</span></div>
     <div>word: <span id="word"></span></div>
     <input type="text">
     <button>input</button>
     <script>
         const numPlayer = parseInt(prompt('How many players??'), 10); // prompt returns string
-        alert(numPlayer);
-        const yesOrNo = confirm('Do you want to confirm??')
+        const _button = document.querySelector('button');
+        const _input = document.querySelector('input');
+        let word;
+        let newWord;
+
+        const onClickButton = function() {
+            if (!word) { // empty?
+                word = newWord;
+
+            } else {
+
+            }
+        };
+        const onInput= function(event) {
+            newWord = event.target.value;
+        };
+
+        _button.addEventListener('click', onClickButton);
+        _input.addEventListener('input', onInput);
     </script>
 
     
