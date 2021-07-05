@@ -33,10 +33,9 @@
                 _input.focus();
                 num++;
                 _order.textContent = num;
-
             } else {
                 if (word[word.length - 1] === newWord[0]) {
-                    
+
                     if (num + 1 > numPlayer) {
                         num = 1;
                         _order.textContent = num;
@@ -62,13 +61,13 @@
         const onInput= function(event) {
             newWord = event.target.value;
         };
-        
+
 
         _button.addEventListener('click', onClickButton);
         _input.addEventListener('input', onInput);
-        
+
     </script>
 
-    
+
 </body>
 </html>
