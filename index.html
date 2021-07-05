@@ -12,30 +12,61 @@
     <div>given word: <span id="word"></span></div>
     <input type="text">
     <button>input</button>
+    <button #refresh><a href=index.html>refresh</a></button>
+
     <script>
         const numPlayer = parseInt(prompt('How many players??'), 10); // prompt returns string
         const _button = document.querySelector('button');
         const _input = document.querySelector('input');
         const _word = document.querySelector('#word');
+        const _order = document.querySelector('#order');
+        const _refresh = document.querySelector('#refresh');
         let word;
         let newWord;
+        let num = 1;
 
         const onClickButton = function() {
             if (!word) { // empty?
                 word = newWord;
                 _word.textContent = word;
                 _input.value = '';
+                _input.focus();
+                num++;
+                _order.textContent = num;
 
             } else {
+                if (word[word.length - 1] === newWord[0]) {
+                    
+                    if (num + 1 > numPlayer) {
+                        num = 1;
+                        _order.textContent = num;
+                        word = newWord;
+                        _word.textContent = word;
+                        _input.value = '';
 
+                    } else {
+                        word = newWord;
+                        _word.textContent = word;
+                        _input.value = '';
+                        num++;
+                        _order.textContent = num;
+                    }
+
+                } else {
+                    alert("wrong word!!!!");
+                    _input.value = '';
+                    _input.focus();
+                }
             }
         };
         const onInput= function(event) {
             newWord = event.target.value;
         };
+        
 
         _button.addEventListener('click', onClickButton);
         _input.addEventListener('input', onInput);
+        
     </script>
 
     
