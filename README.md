@@ -8,7 +8,7 @@
   3. Next player must provide a word that starts with the last alphabet of previously given word.
   4. For example, let's say first player provided **Lion**.
   5. If next person inputs **Nike**, this is correct answer.
-  6. If next person inputs **Pike**, error message will be shown because **'p'!='n'**
+  6. If next person inputs **Pike**, error message will be shown because **'p' != 'n'**
 
 ## Key Features:
 
