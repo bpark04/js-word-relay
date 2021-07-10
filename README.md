@@ -11,6 +11,6 @@
   6. If next person inputs **Pike**, error message will be shown because **'p' != 'n'**
   7. Click 'refresh' to start again
 
-## Key Features:
+
 
 
