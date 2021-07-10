@@ -1,3 +1,3 @@
-# js-word-relay
-**Javascript Practice Diary - Jul 04, 2021**
+# Word Relay
+**Javascript ~~Diary~~ - Jul 04, 2021**
 
