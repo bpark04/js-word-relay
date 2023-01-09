@@ -1,5 +1,5 @@
 # Word Relay
-**JavaScript Diary - Jul 04, 2021**
+**JavaScript Diary - July 04, 2021**
 
 ## How To Play:
 
