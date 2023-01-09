@@ -10,6 +10,8 @@
   5. If next person inputs **Nike**, this is correct answer.
   6. If next person inputs **Pike**, error message will be shown because **'p' != 'n'**
   7. Click `refresh` to start again
+  
+Click this link to play: https://bpark04.github.io/js-word-relay/
 
 
 
